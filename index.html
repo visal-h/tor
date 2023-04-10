@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Deposit</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>MetaMask Deposit</h1>
+    <button id="connect">Connect to MetaMask</button>
+    <div id="deposit-form" style="display:none;">
+        <label for="address">Deposit Address:</label>
+        <input type="text" id="address">
+        <label for="amount">Amount (ETH):</label>
+        <input type="number" id="amount" step="0.0001" min="0">
+        <button id="deposit">Deposit</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
